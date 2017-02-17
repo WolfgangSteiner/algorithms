@@ -1,7 +1,7 @@
 def multiply(a,b):
-    add = lambda a,b : str(int(a) + int(b))
-    sub = lambda a,b : str(int(a) - int(b))
-    shift = lambda a,shift : a + "0" * shift
+    def add(a,b) : return str(int(a) + int(b))
+    def sub(a,b) : return str(int(a) - int(b))
+    def shift(a,shift) : return a + "0" * shift
 
     if len(a) == 1 and len(b) == 1:
         return str(int(a) * int(b))
