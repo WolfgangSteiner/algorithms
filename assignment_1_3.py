@@ -7,7 +7,7 @@ pivot_funcs = (first_pivot, last_pivot, median_of_three_pivot)
 
 
 for n in 10,100,1000:
-    data = read_input(str(n) + ".txt")
+    data = read_input("assignment_1_3_test_%d.txt" % n)
     for idx, pivot_func in enumerate(pivot_funcs):
         assert quick_sort(list(data), pivot_func) == results[n][idx]
 
